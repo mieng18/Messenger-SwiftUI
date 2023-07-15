@@ -21,6 +21,9 @@
 		CA5597E92A6337A40046A63A /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E82A6337A40046A63A /* InboxRowView.swift */; };
 		CA5597EB2A6337BC0046A63A /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */; };
 		CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597EC2A633BFB0046A63A /* Constants.swift */; };
+		CA5597EF2A633E4F0046A63A /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597EE2A633E4F0046A63A /* NewMessageView.swift */; };
+		CA5597F32A6349400046A63A /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F22A6349400046A63A /* SettingsOptionsViewModel.swift */; };
+		CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F42A634A8C0046A63A /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		CA5597E82A6337A40046A63A /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		CA5597EC2A633BFB0046A63A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA5597EE2A633E4F0046A63A /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		CA5597F22A6349400046A63A /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		CA5597F42A634A8C0046A63A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		CA5597D92A627CBB0046A63A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA5597F02A6348ED0046A63A /* Profile */,
 				CA5597DD2A627E2E0046A63A /* Authenticate */,
 				CA5597E52A6336580046A63A /* Inbox */,
 			);
@@ -157,6 +164,7 @@
 		CA5597DA2A627CC10046A63A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CA5597F12A6349270046A63A /* Profile */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,8 +200,25 @@
 				CA5597E62A63366C0046A63A /* InboxView.swift */,
 				CA5597E82A6337A40046A63A /* InboxRowView.swift */,
 				CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */,
+				CA5597EE2A633E4F0046A63A /* NewMessageView.swift */,
 			);
 			path = Inbox;
+			sourceTree = "<group>";
+		};
+		CA5597F02A6348ED0046A63A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597F42A634A8C0046A63A /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CA5597F12A6349270046A63A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597F22A6349400046A63A /* SettingsOptionsViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,11 +355,14 @@
 				CA5597EB2A6337BC0046A63A /* ActiveNowView.swift in Sources */,
 				CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */,
 				CA5597E72A63366C0046A63A /* InboxView.swift in Sources */,
+				CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597B02A627CB20046A63A /* Messenger_SwiftUIApp.swift in Sources */,
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
 				CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */,
+				CA5597F32A6349400046A63A /* SettingsOptionsViewModel.swift in Sources */,
+				CA5597EF2A633E4F0046A63A /* NewMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
