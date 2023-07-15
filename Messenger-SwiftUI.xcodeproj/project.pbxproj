@@ -24,6 +24,7 @@
 		CA5597EF2A633E4F0046A63A /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597EE2A633E4F0046A63A /* NewMessageView.swift */; };
 		CA5597F32A6349400046A63A /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F22A6349400046A63A /* SettingsOptionsViewModel.swift */; };
 		CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F42A634A8C0046A63A /* ProfileView.swift */; };
+		CA5597F72A63503F0046A63A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F62A63503F0046A63A /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		CA5597EE2A633E4F0046A63A /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		CA5597F22A6349400046A63A /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		CA5597F42A634A8C0046A63A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CA5597F62A63503F0046A63A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5597F22A6349400046A63A /* SettingsOptionsViewModel.swift */,
+				CA5597F62A63503F0046A63A /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
 				CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */,
+				CA5597F72A63503F0046A63A /* ProfileViewModel.swift in Sources */,
 				CA5597F32A6349400046A63A /* SettingsOptionsViewModel.swift in Sources */,
 				CA5597EF2A633E4F0046A63A /* NewMessageView.swift in Sources */,
 			);
