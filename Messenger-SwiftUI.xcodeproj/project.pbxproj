@@ -15,6 +15,7 @@
 		CA5597CB2A627CB50046A63A /* Messenger_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597CA2A627CB50046A63A /* Messenger_SwiftUIUITests.swift */; };
 		CA5597CD2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */; };
 		CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597DE2A627E3F0046A63A /* LoginView.swift */; };
+		CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E12A63152B0046A63A /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CA5597CA2A627CB50046A63A /* Messenger_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA5597DE2A627E3F0046A63A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CA5597E12A63152B0046A63A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		CA5597AE2A627CB20046A63A /* Messenger-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA5597E02A6314F00046A63A /* Extensions */,
 				CA5597DC2A627CCA0046A63A /* Model */,
 				CA5597DA2A627CC10046A63A /* ViewModel */,
 				CA5597D92A627CBB0046A63A /* View */,
@@ -160,6 +163,14 @@
 				CA5597DE2A627E3F0046A63A /* LoginView.swift */,
 			);
 			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		CA5597E02A6314F00046A63A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597E12A63152B0046A63A /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 				CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597B02A627CB20046A63A /* Messenger_SwiftUIApp.swift in Sources */,
+				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
