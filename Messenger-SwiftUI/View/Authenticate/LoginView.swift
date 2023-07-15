@@ -14,7 +14,8 @@ struct LoginView: View {
     
     var body: some View {
         NavigationStack{
-            VStack {
+            VStack(spacing: 16) {
+                Spacer()
                 
                 Image("messenger")
                     .resizable()
@@ -28,8 +29,82 @@ struct LoginView: View {
                     
                     CustomSecureField(text: $password, placeholder: "Password")
                 }
-                .padding(.all,16)
+                .padding(.horizontal,16)
+                
+                Button (action:{
+                    print("Handle Login")
 
+                }
+                ){
+                    Text("Forgot Password?")
+                        .font(.footnote)
+                        .fontWeight(.medium)
+                        .padding(.top)
+                        .padding(.trailing,28)
+                }
+                .frame(maxWidth: .infinity,alignment: .trailing)
+                
+                
+                Button {
+                    print("Handle Login")
+
+                } label:{
+                    Text("Login")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360,height: 44)
+                        .background(.blue)
+                        .cornerRadius(10)
+                }
+                
+                HStack{
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width/2) - 40,height: 0.5)
+                    Text("OR")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width/2) - 40,height: 0.5)
+                }
+                .foregroundColor(.grayText868585)
+                
+                HStack(spacing:8){
+                 
+                    Image("facebook")
+                        .resizable()
+                        .frame(width: 20,height:20)
+                    
+                    Text("Continue with Facebook")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.blue)
+
+                }
+                .padding(.top,8)
+                
+                Spacer()
+                
+                
+                Divider()
+                NavigationLink{
+                    Text("Sign up View")
+                    
+                    
+                } label: {
+                    HStack(spacing:3) {
+                        Text("Don't have an account?")
+                        
+                        Text("Sign Up")
+                            .fontWeight(.semibold)
+
+                        
+                    }
+                }
+                .padding(.vertical)
+                
+                
            }
         }
        
@@ -50,6 +125,7 @@ struct CustomTextField: View {
         ZStack (alignment: .leading) {
             if text.isEmpty {
                 Text(placeholder)
+                    .font(.subheadline)
                     .foregroundColor(.black.opacity(0.4))
                     .padding(.leading,18)
                     .textInputAutocapitalization(.never)
@@ -58,6 +134,7 @@ struct CustomTextField: View {
             HStack {
                 
                 TextField("", text: $text)
+                    .font(.subheadline)
                     .foregroundColor(.black.opacity(0.9))
                     .autocapitalization(.none)
                     .padding(.leading,0 )
@@ -101,6 +178,7 @@ struct CustomSecureField: View {
         ZStack (alignment: .leading) {
             if text.isEmpty {
                 Text(placeholder)
+                    .font(.subheadline)
                     .foregroundColor(.black.opacity(0.4))
                     .padding(.leading,18)
                     .textInputAutocapitalization(.never)
@@ -109,6 +187,7 @@ struct CustomSecureField: View {
             HStack {
             
                 SecureField("", text: $text)
+                    .font(.subheadline)
                     .foregroundColor(.black.opacity(0.9))
                     .padding(.leading,0)
                     .textInputAutocapitalization(.never)
