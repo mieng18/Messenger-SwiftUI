@@ -17,6 +17,10 @@
 		CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597DE2A627E3F0046A63A /* LoginView.swift */; };
 		CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E12A63152B0046A63A /* Color+Extension.swift */; };
 		CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E32A6333440046A63A /* RegistrationView.swift */; };
+		CA5597E72A63366C0046A63A /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E62A63366C0046A63A /* InboxView.swift */; };
+		CA5597E92A6337A40046A63A /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E82A6337A40046A63A /* InboxRowView.swift */; };
+		CA5597EB2A6337BC0046A63A /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */; };
+		CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597EC2A633BFB0046A63A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		CA5597DE2A627E3F0046A63A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CA5597E12A63152B0046A63A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CA5597E32A6333440046A63A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		CA5597E62A63366C0046A63A /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		CA5597E82A6337A40046A63A /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		CA5597EC2A633BFB0046A63A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5597DD2A627E2E0046A63A /* Authenticate */,
+				CA5597E52A6336580046A63A /* Inbox */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,8 +181,19 @@
 			isa = PBXGroup;
 			children = (
 				CA5597E12A63152B0046A63A /* Color+Extension.swift */,
+				CA5597EC2A633BFB0046A63A /* Constants.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA5597E52A6336580046A63A /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597E62A63366C0046A63A /* InboxView.swift */,
+				CA5597E82A6337A40046A63A /* InboxRowView.swift */,
+				CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */,
+			);
+			path = Inbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,11 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5597E92A6337A40046A63A /* InboxRowView.swift in Sources */,
+				CA5597EB2A6337BC0046A63A /* ActiveNowView.swift in Sources */,
 				CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */,
+				CA5597E72A63366C0046A63A /* InboxView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597B02A627CB20046A63A /* Messenger_SwiftUIApp.swift in Sources */,
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
+				CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
