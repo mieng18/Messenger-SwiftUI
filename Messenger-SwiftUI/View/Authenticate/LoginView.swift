@@ -101,6 +101,7 @@ struct LoginView: View {
 
                         
                     }
+                    .foregroundColor(.blue)
                 }
                 .padding(.vertical)
                 
