@@ -14,6 +14,7 @@
 		CA5597C12A627CB50046A63A /* Messenger_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597C02A627CB50046A63A /* Messenger_SwiftUITests.swift */; };
 		CA5597CB2A627CB50046A63A /* Messenger_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597CA2A627CB50046A63A /* Messenger_SwiftUIUITests.swift */; };
 		CA5597CD2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */; };
+		CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597DE2A627E3F0046A63A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CA5597C62A627CB50046A63A /* Messenger-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Messenger-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5597CA2A627CB50046A63A /* Messenger_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA5597DE2A627E3F0046A63A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		CA5597D92A627CBB0046A63A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA5597DD2A627E2E0046A63A /* Authenticate */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +152,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CA5597DD2A627E2E0046A63A /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597DE2A627E3F0046A63A /* LoginView.swift */,
+			);
+			path = Authenticate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597B02A627CB20046A63A /* Messenger_SwiftUIApp.swift in Sources */,
 			);
