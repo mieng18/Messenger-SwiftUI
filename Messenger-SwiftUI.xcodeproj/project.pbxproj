@@ -16,6 +16,7 @@
 		CA5597CD2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */; };
 		CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597DE2A627E3F0046A63A /* LoginView.swift */; };
 		CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E12A63152B0046A63A /* Color+Extension.swift */; };
+		CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597E32A6333440046A63A /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA5597DE2A627E3F0046A63A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CA5597E12A63152B0046A63A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		CA5597E32A6333440046A63A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5597DE2A627E3F0046A63A /* LoginView.swift */,
+				CA5597E32A6333440046A63A /* RegistrationView.swift */,
 			);
 			path = Authenticate;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597B02A627CB20046A63A /* Messenger_SwiftUIApp.swift in Sources */,
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
+				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
