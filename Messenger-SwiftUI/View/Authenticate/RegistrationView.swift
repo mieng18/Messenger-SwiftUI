@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = RegistrationViewModel()
     var body: some View {
         
         VStack(spacing:16) {
@@ -20,15 +19,17 @@ struct RegistrationView: View {
                 .padding()
             
             VStack{
-                CustomTextField(text: $email, placeholder: "Enter your email")
-                CustomTextField(text: $email, placeholder: "Enter your fullname")
+                CustomTextField(text: $viewModel.email, placeholder: "Enter your email")
+                CustomTextField(text: $viewModel.fullname, placeholder: "Enter your fullname")
                 
                 
-                CustomSecureField(text: $password, placeholder: "Password")
+                CustomSecureField(text: $viewModel.password, placeholder: "Password")
             }
                 
                 Button {
-                    print("Handle Login")
+                    Task{
+                        try await viewModel.createUser()
+                    }
 
                 } label:{
                     Text("Sign Up")

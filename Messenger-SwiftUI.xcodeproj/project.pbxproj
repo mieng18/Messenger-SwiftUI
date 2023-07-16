@@ -37,6 +37,7 @@
 		CA55980F2A64AF110046A63A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CA55980E2A64AF110046A63A /* FirebaseStorage */; };
 		CA5598122A64B2200046A63A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598112A64B2200046A63A /* AuthService.swift */; };
 		CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598142A64B5680046A63A /* LoginViewModel.swift */; };
+		CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		CA5598052A64AE8B0046A63A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CA5598112A64B2200046A63A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../../../../Downloads/AuthService.swift; sourceTree = "<group>"; };
 		CA5598142A64B5680046A63A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5598142A64B5680046A63A /* LoginViewModel.swift */,
+				CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */,
 			);
 			path = Authenticate;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */,
 				CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */,
 				CA5598042A64A9410046A63A /* ChatBubble.swift in Sources */,
+				CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */,
 				CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597F92A6464130046A63A /* User.swift in Sources */,
