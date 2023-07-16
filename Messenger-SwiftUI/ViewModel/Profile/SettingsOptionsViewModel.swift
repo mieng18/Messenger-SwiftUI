@@ -49,11 +49,11 @@ enum SettingsOptionsViewModel: Int,CaseIterable,Identifiable {
         switch self {
             
         case .darkMode:
-            return Color.gray.opacity(0.3)
+            return Color.gray.opacity(0.9)
         case .activeStatus:
             return Color(.systemGreen)
         case .accessibility:
-            return Color.gray.opacity(0.3)
+            return Color.gray.opacity(0.9)
 
         case .privacy:
             return Color(.systemBlue)
