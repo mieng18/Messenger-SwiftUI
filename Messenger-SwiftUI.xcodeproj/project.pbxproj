@@ -26,6 +26,7 @@
 		CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F42A634A8C0046A63A /* ProfileView.swift */; };
 		CA5597F72A63503F0046A63A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F62A63503F0046A63A /* ProfileViewModel.swift */; };
 		CA5597F92A6464130046A63A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597F82A6464130046A63A /* User.swift */; };
+		CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5597FC2A646A500046A63A /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CA5597F42A634A8C0046A63A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CA5597F62A63503F0046A63A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		CA5597F82A6464130046A63A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA5597FC2A646A500046A63A /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		CA5597AE2A627CB20046A63A /* Messenger-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA5597FB2A646A220046A63A /* Components */,
 				CA5597E02A6314F00046A63A /* Extensions */,
 				CA5597DC2A627CCA0046A63A /* Model */,
 				CA5597DA2A627CC10046A63A /* ViewModel */,
@@ -225,6 +228,14 @@
 				CA5597F62A63503F0046A63A /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CA5597FB2A646A220046A63A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597FC2A646A500046A63A /* CircularProfileImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +372,7 @@
 				CA5597EB2A6337BC0046A63A /* ActiveNowView.swift in Sources */,
 				CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */,
 				CA5597E72A63366C0046A63A /* InboxView.swift in Sources */,
+				CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */,
 				CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597F92A6464130046A63A /* User.swift in Sources */,
