@@ -35,6 +35,9 @@
 		CA55980B2A64AF110046A63A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CA55980A2A64AF110046A63A /* FirebaseFirestore */; };
 		CA55980D2A64AF110046A63A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA55980C2A64AF110046A63A /* FirebaseFirestoreSwift */; };
 		CA55980F2A64AF110046A63A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CA55980E2A64AF110046A63A /* FirebaseStorage */; };
+		CA5598122A64B2200046A63A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598112A64B2200046A63A /* AuthService.swift */; };
+		CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598142A64B5680046A63A /* LoginViewModel.swift */; };
+		CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		CA5598012A64A2BC0046A63A /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		CA5598032A64A9410046A63A /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		CA5598052A64AE8B0046A63A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA5598112A64B2200046A63A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../../../../Downloads/AuthService.swift; sourceTree = "<group>"; };
+		CA5598142A64B5680046A63A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		CA5597AE2A627CB20046A63A /* Messenger-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA5598102A64B2060046A63A /* Service */,
 				CA5597FB2A646A220046A63A /* Components */,
 				CA5597E02A6314F00046A63A /* Extensions */,
 				CA5597DC2A627CCA0046A63A /* Model */,
@@ -189,6 +196,7 @@
 		CA5597DA2A627CC10046A63A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CA5598132A64B5510046A63A /* Authenticate */,
 				CA5597F12A6349270046A63A /* Profile */,
 			);
 			path = ViewModel;
@@ -264,6 +272,23 @@
 				CA5598032A64A9410046A63A /* ChatBubble.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		CA5598102A64B2060046A63A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CA5598112A64B2200046A63A /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CA5598132A64B5510046A63A /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				CA5598142A64B5680046A63A /* LoginViewModel.swift */,
+				CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */,
+			);
+			path = Authenticate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,8 +437,11 @@
 				CA5597DF2A627E3F0046A63A /* LoginView.swift in Sources */,
 				CA5597E72A63366C0046A63A /* InboxView.swift in Sources */,
 				CA5598002A64A1750046A63A /* ChatView.swift in Sources */,
+				CA5598122A64B2200046A63A /* AuthService.swift in Sources */,
 				CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */,
+				CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */,
 				CA5598042A64A9410046A63A /* ChatBubble.swift in Sources */,
+				CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */,
 				CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597F92A6464130046A63A /* User.swift in Sources */,
