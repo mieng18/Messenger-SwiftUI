@@ -39,6 +39,7 @@
 		CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598142A64B5680046A63A /* LoginViewModel.swift */; };
 		CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */; };
 		CA55981E2A64F8E90046A63A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55981D2A64F8E90046A63A /* ContentViewModel.swift */; };
+		CA5598202A6757B20046A63A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55981F2A6757B20046A63A /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		CA5598142A64B5680046A63A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		CA55981D2A64F8E90046A63A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CA55981F2A6757B20046A63A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5598112A64B2200046A63A /* AuthService.swift */,
+				CA55981F2A6757B20046A63A /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				CA5597E72A63366C0046A63A /* InboxView.swift in Sources */,
 				CA5598002A64A1750046A63A /* ChatView.swift in Sources */,
 				CA5598122A64B2200046A63A /* AuthService.swift in Sources */,
+				CA5598202A6757B20046A63A /* UserService.swift in Sources */,
 				CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */,
 				CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */,
 				CA5598042A64A9410046A63A /* ChatBubble.swift in Sources */,
