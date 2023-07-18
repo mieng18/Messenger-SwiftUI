@@ -55,7 +55,7 @@ struct ProfileView: View {
                 
                 Section{
                     Button("Log out") {
-                        
+                        AuthService.shared.logOut()
                     }
                     .foregroundColor(.gray)
                     
