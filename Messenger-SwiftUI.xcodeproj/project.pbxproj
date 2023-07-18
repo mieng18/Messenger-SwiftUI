@@ -38,6 +38,7 @@
 		CA5598122A64B2200046A63A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598112A64B2200046A63A /* AuthService.swift */; };
 		CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598142A64B5680046A63A /* LoginViewModel.swift */; };
 		CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */; };
+		CA55981E2A64F8E90046A63A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55981D2A64F8E90046A63A /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		CA5598112A64B2200046A63A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../../../../Downloads/AuthService.swift; sourceTree = "<group>"; };
 		CA5598142A64B5680046A63A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		CA55981D2A64F8E90046A63A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,14 +144,14 @@
 		CA5597AE2A627CB20046A63A /* Messenger-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA5598182A64F8490046A63A /* Root */,
 				CA5598102A64B2060046A63A /* Service */,
-				CA5597FB2A646A220046A63A /* Components */,
-				CA5597E02A6314F00046A63A /* Extensions */,
 				CA5597DC2A627CCA0046A63A /* Model */,
 				CA5597DA2A627CC10046A63A /* ViewModel */,
 				CA5597D92A627CBB0046A63A /* View */,
 				CA5597AF2A627CB20046A63A /* Messenger_SwiftUIApp.swift */,
-				CA5597B12A627CB20046A63A /* ContentView.swift */,
+				CA5597FB2A646A220046A63A /* Components */,
+				CA5597E02A6314F00046A63A /* Extensions */,
 				CA5597B32A627CB50046A63A /* Assets.xcassets */,
 				CA5598052A64AE8B0046A63A /* GoogleService-Info.plist */,
 				CA5597B52A627CB50046A63A /* Preview Content */,
@@ -289,6 +291,31 @@
 				CA5598162A64B6F90046A63A /* RegistrationViewModel.swift */,
 			);
 			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		CA5598182A64F8490046A63A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CA5598192A64F8580046A63A /* View */,
+				CA55981A2A64F85F0046A63A /* ViewModel */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CA5598192A64F8580046A63A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA5597B12A627CB20046A63A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA55981A2A64F85F0046A63A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA55981D2A64F8E90046A63A /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +476,7 @@
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
 				CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */,
+				CA55981E2A64F8E90046A63A /* ContentViewModel.swift in Sources */,
 				CA5597F72A63503F0046A63A /* ProfileViewModel.swift in Sources */,
 				CA5597F32A6349400046A63A /* SettingsOptionsViewModel.swift in Sources */,
 				CA5597EF2A633E4F0046A63A /* NewMessageView.swift in Sources */,
