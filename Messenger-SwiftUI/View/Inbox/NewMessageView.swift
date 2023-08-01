@@ -9,6 +9,8 @@ import SwiftUI
 
 struct NewMessageView: View {
     
+    @StateObject private var viewModel = NewMessageViewModel()
+    @Binding var selectedUser: User?
     @State private var searchText = ""
     @Environment(\.dismiss) var dismiss
     
@@ -27,7 +29,7 @@ struct NewMessageView: View {
                     .padding()
                 
                 
-                ForEach(0...10,id:\.self) { user in
+                ForEach(viewModel.users,id:\.self) { user in
                     VStack{
                         HStack {
                             CircularProfileImageView(user: User.MOCK_USER, size: .small)
@@ -41,6 +43,9 @@ struct NewMessageView: View {
                         
                         Divider()
                             .padding(.leading,40)
+                    }
+                    .onTapGesture {
+                        selectedUser = user
                     }
                 }
             }
@@ -60,6 +65,6 @@ struct NewMessageView: View {
 
 struct NewMessageView_Previews: PreviewProvider {
     static var previews: some View {
-        NewMessageView()
+        NewMessageView(selectedUser: .constant(User.MOCK_USER))
     }
 }
