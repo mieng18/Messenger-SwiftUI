@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct InboxView: View {
-    @State private var user = User.MOCK_USER
     @State private var showNewMessageView  = false
+    @StateObject var viewModel = InboxViewModel()
+    
+    private var user: User?  {
+        return viewModel.currentUser
+    }
     
     var body: some View {
         NavigationStack {
@@ -27,7 +31,7 @@ struct InboxView: View {
                 ProfileView(user:user)
             })
             .fullScreenCover(isPresented: $showNewMessageView,content: {
-                NewMessageView()
+//                NewMessageView()
             })
             .padding(.all,16)
             .toolbar {
