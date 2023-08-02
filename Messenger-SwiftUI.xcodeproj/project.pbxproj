@@ -42,6 +42,7 @@
 		CA5598202A6757B20046A63A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55981F2A6757B20046A63A /* UserService.swift */; };
 		CADE12FA2A79BD7C005D4BC8 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */; };
 		CADE12FC2A79BEB1005D4BC8 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */; };
+		CADE12FE2A79DB68005D4BC8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FD2A79DB68005D4BC8 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		CA55981F2A6757B20046A63A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		CADE12FD2A79DB68005D4BC8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5597F82A6464130046A63A /* User.swift */,
+				CADE12FD2A79DB68005D4BC8 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				CA5598122A64B2200046A63A /* AuthService.swift in Sources */,
 				CA5598202A6757B20046A63A /* UserService.swift in Sources */,
 				CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */,
+				CADE12FE2A79DB68005D4BC8 /* Message.swift in Sources */,
 				CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */,
 				CA5598042A64A9410046A63A /* ChatBubble.swift in Sources */,
 				CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */,
