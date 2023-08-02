@@ -43,6 +43,7 @@
 		CADE12FA2A79BD7C005D4BC8 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */; };
 		CADE12FC2A79BEB1005D4BC8 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */; };
 		CADE12FE2A79DB68005D4BC8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FD2A79DB68005D4BC8 /* Message.swift */; };
+		CADE13002A79DE7D005D4BC8 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FF2A79DE7D005D4BC8 /* MessageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		CADE12FD2A79DB68005D4BC8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CADE12FF2A79DE7D005D4BC8 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 			children = (
 				CA5598112A64B2200046A63A /* AuthService.swift */,
 				CA55981F2A6757B20046A63A /* UserService.swift */,
+				CADE12FF2A79DE7D005D4BC8 /* MessageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */,
 				CA5598042A64A9410046A63A /* ChatBubble.swift in Sources */,
 				CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */,
+				CADE13002A79DE7D005D4BC8 /* MessageService.swift in Sources */,
 				CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597F92A6464130046A63A /* User.swift in Sources */,

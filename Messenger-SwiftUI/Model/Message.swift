@@ -10,7 +10,7 @@ import Firebase
 import FirebaseFirestoreSwift
 
 struct Message: Identifiable,Codable,Hashable {
-    @DocumentID var messageID: String?
+    @DocumentID var messageId: String?
     let fromId: String
     let toId: String
     let messageText: String
@@ -19,7 +19,7 @@ struct Message: Identifiable,Codable,Hashable {
     var user: User?
     
     var id: String{
-        return messageID ?? NSUUID().uuidString
+        return messageId ?? NSUUID().uuidString
     }
     
     var chatPartnerId: String {
