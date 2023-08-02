@@ -31,7 +31,7 @@ struct InboxView: View {
                 ProfileView(user:user)
             })
             .fullScreenCover(isPresented: $showNewMessageView,content: {
-//                NewMessageView()
+                NewMessageView()
             })
             .padding(.all,16)
             .toolbar {
