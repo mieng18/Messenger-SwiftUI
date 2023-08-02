@@ -10,15 +10,15 @@ import Firebase
 
 
 struct MessageService {
-    let messageCollection = Firestore.firestore().collection("messages")
+    static let messagesCollection = Firestore.firestore().collection("messages")
     
-    func sendMessage(_ messageText: String, toUser user: User) {
+    static func sendMessage(_ messageText: String, toUser user: User) {
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
         
         let charPartnerId = user.id
         
-        let currentUserRef = messageCollection.document(currentUid).collection(charPartnerId).document()
-        let chatParnerRef = messageCollection.document(charPartnerId).collection(currentUid)
+        let currentUserRef = messagesCollection.document(currentUid).collection(charPartnerId).document()
+        let chatParnerRef = messagesCollection.document(charPartnerId).collection(currentUid)
         
         let messageId = currentUserRef.documentID
         
