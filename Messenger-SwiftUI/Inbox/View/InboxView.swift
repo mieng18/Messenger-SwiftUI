@@ -63,6 +63,7 @@ struct InboxView: View {
                     
                     Button{
                         showNewMessageView.toggle()
+                        selectedUser = nil
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()

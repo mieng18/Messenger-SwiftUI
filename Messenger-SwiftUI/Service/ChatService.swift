@@ -1,24 +1,24 @@
 //
-//  MessageService.swift
+//  ChatService.swift
 //  Messenger-SwiftUI
 //
-//  Created by mai nguyen on 8/1/23.
+//  Created by mai nguyen on 8/2/23.
 //
 
 import Foundation
 import Firebase
 
-
-struct MessageService {
-    static let messagesCollection = Firestore.firestore().collection("messages")
+struct ChatService {
     
-    static func sendMessage(_ messageText: String, toUser user: User) {
+    let chatPartner: User
+    
+     func sendMessage(_ messageText: String) {
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
         
-        let charPartnerId = user.id
+        let charPartnerId = chatPartner.id
         
-        let currentUserRef = messagesCollection.document(currentUid).collection(charPartnerId).document()
-        let chatParnerRef = messagesCollection.document(charPartnerId).collection(currentUid)
+         let currentUserRef = FirestoreConstants.messagesCollection.document(currentUid).collection(charPartnerId).document()
+         let chatParnerRef = FirestoreConstants.messagesCollection.document(charPartnerId).collection(currentUid)
         
         let messageId = currentUserRef.documentID
         
@@ -30,10 +30,10 @@ struct MessageService {
             
     }
     
-    static func observeMessages(chatPartner: User,completion: @escaping([Message]) -> Void) {
+    func observeMessages(completion: @escaping([Message]) -> Void) {
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
         let chatPartnerId = chatPartner.id
-        let query = messagesCollection
+        let query = FirestoreConstants.messagesCollection
             .document(currentUid)
             .collection(chatPartnerId)
             .order(by:"timestamp",descending: false)
