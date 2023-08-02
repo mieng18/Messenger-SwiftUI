@@ -43,6 +43,8 @@
 		CADE12FA2A79BD7C005D4BC8 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */; };
 		CADE12FC2A79BEB1005D4BC8 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */; };
 		CADE12FE2A79DB68005D4BC8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FD2A79DB68005D4BC8 /* Message.swift */; };
+		CADE13002A79DE7D005D4BC8 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FF2A79DE7D005D4BC8 /* MessageService.swift */; };
+		CADE13032A79E4FA005D4BC8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13022A79E4FA005D4BC8 /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		CADE12FD2A79DB68005D4BC8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CADE12FF2A79DE7D005D4BC8 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		CADE13022A79E4FA005D4BC8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 		CA5597DA2A627CC10046A63A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CADE13012A79E4EA005D4BC8 /* Chat */,
 				CADE12F82A79BCEF005D4BC8 /* Inbox */,
 				CA5598132A64B5510046A63A /* Authenticate */,
 				CA5597F12A6349270046A63A /* Profile */,
@@ -291,6 +296,7 @@
 			children = (
 				CA5598112A64B2200046A63A /* AuthService.swift */,
 				CA55981F2A6757B20046A63A /* UserService.swift */,
+				CADE12FF2A79DE7D005D4BC8 /* MessageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -336,6 +342,14 @@
 				CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */,
 			);
 			path = Inbox;
+			sourceTree = "<group>";
+		};
+		CADE13012A79E4EA005D4BC8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CADE13022A79E4FA005D4BC8 /* ChatViewModel.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +505,7 @@
 				CA5598152A64B5680046A63A /* LoginViewModel.swift in Sources */,
 				CA5598042A64A9410046A63A /* ChatBubble.swift in Sources */,
 				CA5598172A64B6F90046A63A /* RegistrationViewModel.swift in Sources */,
+				CADE13002A79DE7D005D4BC8 /* MessageService.swift in Sources */,
 				CA5597F52A634A8C0046A63A /* ProfileView.swift in Sources */,
 				CA5597B22A627CB20046A63A /* ContentView.swift in Sources */,
 				CA5597F92A6464130046A63A /* User.swift in Sources */,
@@ -499,6 +514,7 @@
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
 				CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */,
+				CADE13032A79E4FA005D4BC8 /* ChatViewModel.swift in Sources */,
 				CA55981E2A64F8E90046A63A /* ContentViewModel.swift in Sources */,
 				CA5597F72A63503F0046A63A /* ProfileViewModel.swift in Sources */,
 				CADE12FC2A79BEB1005D4BC8 /* InboxViewModel.swift in Sources */,
