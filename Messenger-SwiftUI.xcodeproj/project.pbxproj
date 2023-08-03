@@ -165,12 +165,11 @@
 				CADE130F2A7AC485005D4BC8 /* Utils */,
 				CA5598182A64F8490046A63A /* Root */,
 				CA5598102A64B2060046A63A /* Service */,
-				CA5597DD2A627E2E0046A63A /* Authenticate */,
 				CA5597DC2A627CCA0046A63A /* Model */,
+				CA5597DD2A627E2E0046A63A /* Authenticate */,
 				CA5597E52A6336580046A63A /* Inbox */,
 				CADE13042A7AC21A005D4BC8 /* Chat */,
 				CA5597F02A6348ED0046A63A /* Profile */,
-				CA5597DA2A627CC10046A63A /* ViewModel */,
 				CA5597AF2A627CB20046A63A /* Messenger_SwiftUIApp.swift */,
 				CA5597FB2A646A220046A63A /* Components */,
 				CA5597E02A6314F00046A63A /* Extensions */,
@@ -204,14 +203,6 @@
 				CA5597CC2A627CB50046A63A /* Messenger_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Messenger-SwiftUIUITests";
-			sourceTree = "<group>";
-		};
-		CA5597DA2A627CC10046A63A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CADE12F82A79BCEF005D4BC8 /* Inbox */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CA5597DC2A627CCA0046A63A /* Model */ = {
@@ -313,14 +304,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CADE12F82A79BCEF005D4BC8 /* Inbox */ = {
-			isa = PBXGroup;
-			children = (
-				CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */,
-			);
-			path = Inbox;
-			sourceTree = "<group>";
-		};
 		CADE13042A7AC21A005D4BC8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +334,7 @@
 		CADE13072A7AC26C005D4BC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */,
 				CA5597E62A63366C0046A63A /* InboxView.swift */,
 				CA5597E82A6337A40046A63A /* InboxRowView.swift */,
 				CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */,
