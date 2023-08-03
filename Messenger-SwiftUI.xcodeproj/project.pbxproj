@@ -46,6 +46,7 @@
 		CADE13032A79E4FA005D4BC8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13022A79E4FA005D4BC8 /* ChatViewModel.swift */; };
 		CADE130E2A7AC381005D4BC8 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE130D2A7AC381005D4BC8 /* ChatService.swift */; };
 		CADE13112A7AC4A7005D4BC8 /* FirestoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13102A7AC4A7005D4BC8 /* FirestoreConstants.swift */; };
+		CADE13132A7C1680005D4BC8 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13122A7C1680005D4BC8 /* InboxService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		CADE13022A79E4FA005D4BC8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		CADE130D2A7AC381005D4BC8 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		CADE13102A7AC4A7005D4BC8 /* FirestoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreConstants.swift; sourceTree = "<group>"; };
+		CADE13122A7C1680005D4BC8 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				CA5598112A64B2200046A63A /* AuthService.swift */,
 				CA55981F2A6757B20046A63A /* UserService.swift */,
 				CADE130D2A7AC381005D4BC8 /* ChatService.swift */,
+				CADE13122A7C1680005D4BC8 /* InboxService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADE13132A7C1680005D4BC8 /* InboxService.swift in Sources */,
 				CA5597E92A6337A40046A63A /* InboxRowView.swift in Sources */,
 				CA5597EB2A6337BC0046A63A /* ActiveNowView.swift in Sources */,
 				CA5598022A64A2BC0046A63A /* ChatMessageCell.swift in Sources */,
