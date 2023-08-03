@@ -35,7 +35,4 @@ class UserService{
             completion(user)
         }
     }
-    
-    
-
 }

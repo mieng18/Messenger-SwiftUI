@@ -47,6 +47,7 @@
 		CADE130E2A7AC381005D4BC8 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE130D2A7AC381005D4BC8 /* ChatService.swift */; };
 		CADE13112A7AC4A7005D4BC8 /* FirestoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13102A7AC4A7005D4BC8 /* FirestoreConstants.swift */; };
 		CADE13132A7C1680005D4BC8 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13122A7C1680005D4BC8 /* InboxService.swift */; };
+		CADE13152A7C5140005D4BC8 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE13142A7C5140005D4BC8 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		CADE130D2A7AC381005D4BC8 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		CADE13102A7AC4A7005D4BC8 /* FirestoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreConstants.swift; sourceTree = "<group>"; };
 		CADE13122A7C1680005D4BC8 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		CADE13142A7C5140005D4BC8 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +165,11 @@
 				CADE130F2A7AC485005D4BC8 /* Utils */,
 				CA5598182A64F8490046A63A /* Root */,
 				CA5598102A64B2060046A63A /* Service */,
+				CA5597DC2A627CCA0046A63A /* Model */,
 				CA5597DD2A627E2E0046A63A /* Authenticate */,
 				CA5597E52A6336580046A63A /* Inbox */,
 				CADE13042A7AC21A005D4BC8 /* Chat */,
 				CA5597F02A6348ED0046A63A /* Profile */,
-				CA5597DC2A627CCA0046A63A /* Model */,
-				CA5597DA2A627CC10046A63A /* ViewModel */,
 				CA5597AF2A627CB20046A63A /* Messenger_SwiftUIApp.swift */,
 				CA5597FB2A646A220046A63A /* Components */,
 				CA5597E02A6314F00046A63A /* Extensions */,
@@ -204,14 +205,6 @@
 			path = "Messenger-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
-		CA5597DA2A627CC10046A63A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CADE12F82A79BCEF005D4BC8 /* Inbox */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CA5597DC2A627CCA0046A63A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +228,7 @@
 			children = (
 				CA5597E12A63152B0046A63A /* Color+Extension.swift */,
 				CA5597EC2A633BFB0046A63A /* Constants.swift */,
+				CADE13142A7C5140005D4BC8 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,14 +304,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CADE12F82A79BCEF005D4BC8 /* Inbox */ = {
-			isa = PBXGroup;
-			children = (
-				CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */,
-			);
-			path = Inbox;
-			sourceTree = "<group>";
-		};
 		CADE13042A7AC21A005D4BC8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +334,7 @@
 		CADE13072A7AC26C005D4BC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */,
 				CA5597E62A63366C0046A63A /* InboxView.swift */,
 				CA5597E82A6337A40046A63A /* InboxRowView.swift */,
 				CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */,
@@ -547,6 +534,7 @@
 				CA5597E72A63366C0046A63A /* InboxView.swift in Sources */,
 				CA5598002A64A1750046A63A /* ChatView.swift in Sources */,
 				CA5598122A64B2200046A63A /* AuthService.swift in Sources */,
+				CADE13152A7C5140005D4BC8 /* Date+Extensions.swift in Sources */,
 				CA5598202A6757B20046A63A /* UserService.swift in Sources */,
 				CA5597FD2A646A500046A63A /* CircularProfileImageView.swift in Sources */,
 				CADE12FE2A79DB68005D4BC8 /* Message.swift in Sources */,

@@ -23,11 +23,15 @@ struct Message: Identifiable,Codable,Hashable {
     }
     
     var chatPartnerId: String {
-        return fromId ?? NSUUID().uuidString
+        return toId ?? NSUUID().uuidString
     }
     
     var isFromCurrentUser: Bool {
         return fromId == Auth.auth().currentUser?.uid
+    }
+    
+    var timestampString: String {
+        return timestamp.dateValue().timestampString()
     }
 }
 
