@@ -12,22 +12,31 @@ struct ChatService {
     
     let chatPartner: User
     
-     func sendMessage(_ messageText: String) {
+    func sendMessage(_ messageText: String) {
+    
         guard let currentUid = Auth.auth().currentUser?.uid else {return}
-        
+
+
         let charPartnerId = chatPartner.id
+
+        let currentUserRef = FirestoreConstants.messagesCollection.document(currentUid).collection(charPartnerId).document()
+        let chatParnerRef = FirestoreConstants.messagesCollection.document(charPartnerId).collection(currentUid)
         
-         let currentUserRef = FirestoreConstants.messagesCollection.document(currentUid).collection(charPartnerId).document()
-         let chatParnerRef = FirestoreConstants.messagesCollection.document(charPartnerId).collection(currentUid)
-        
+        let recentCurrentUserRef = FirestoreConstants.messagesCollection.document(currentUid).collection("recent-messages").document(charPartnerId)
+        let recentPartnerRef = FirestoreConstants.messagesCollection.document(charPartnerId).collection("recent-messages").document(currentUid)
+
+
         let messageId = currentUserRef.documentID
-        
+
         let message = Message(messageId:messageId,fromId: currentUid, toId: charPartnerId, messageText: messageText, timestamp: Timestamp())
-        
+
         guard let messageData = try? Firestore.Encoder().encode(message) else {return}
-            currentUserRef.setData(messageData)
-            chatParnerRef.document(messageId).setData(messageData)
-            
+        currentUserRef.setData(messageData)
+        chatParnerRef.document(messageId).setData(messageData)
+        
+        recentCurrentUserRef.setData(messageData)
+        recentPartnerRef.setData(messageData)
+
     }
     
     func observeMessages(completion: @escaping([Message]) -> Void) {
