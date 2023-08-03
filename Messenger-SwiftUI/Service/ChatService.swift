@@ -28,7 +28,12 @@ struct ChatService {
 
         let messageId = currentUserRef.documentID
 
-        let message = Message(messageId:messageId,fromId: currentUid, toId: charPartnerId, messageText: messageText, timestamp: Timestamp())
+        let message = Message(
+            messageId:messageId,
+            fromId: currentUid,
+            toId: charPartnerId,
+            messageText: messageText,
+            timestamp: Timestamp())
 
         guard let messageData = try? Firestore.Encoder().encode(message) else {return}
         currentUserRef.setData(messageData)
