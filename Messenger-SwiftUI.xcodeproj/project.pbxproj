@@ -41,6 +41,7 @@
 		CA55981E2A64F8E90046A63A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55981D2A64F8E90046A63A /* ContentViewModel.swift */; };
 		CA5598202A6757B20046A63A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55981F2A6757B20046A63A /* UserService.swift */; };
 		CAB0F1EA2A7DFEC3001247F3 /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0F1E92A7DFEC3001247F3 /* ActiveNowViewModel.swift */; };
+		CAB0F1EC2A7E068E001247F3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0F1EB2A7E068E001247F3 /* Route.swift */; };
 		CADE12FA2A79BD7C005D4BC8 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */; };
 		CADE12FC2A79BEB1005D4BC8 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */; };
 		CADE12FE2A79DB68005D4BC8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE12FD2A79DB68005D4BC8 /* Message.swift */; };
@@ -102,6 +103,7 @@
 		CA55981D2A64F8E90046A63A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		CA55981F2A6757B20046A63A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CAB0F1E92A7DFEC3001247F3 /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		CAB0F1EB2A7E068E001247F3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		CADE12FB2A79BEB1005D4BC8 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		CADE12FD2A79DB68005D4BC8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 		CAB0F1E72A7DFEA8001247F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,7 +367,6 @@
 				CADE12F92A79BD7C005D4BC8 /* NewMessageViewModel.swift */,
 				CA5597E62A63366C0046A63A /* InboxView.swift */,
 				CA5597E82A6337A40046A63A /* InboxRowView.swift */,
-				CA5597EA2A6337BC0046A63A /* ActiveNowView.swift */,
 				CA5597EE2A633E4F0046A63A /* NewMessageView.swift */,
 			);
 			path = View;
@@ -408,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				CADE13102A7AC4A7005D4BC8 /* FirestoreConstants.swift */,
+				CAB0F1EB2A7E068E001247F3 /* Route.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				CA5597B02A627CB20046A63A /* Messenger_SwiftUIApp.swift in Sources */,
 				CA5597E22A63152B0046A63A /* Color+Extension.swift in Sources */,
 				CA5597E42A6333440046A63A /* RegistrationView.swift in Sources */,
+				CAB0F1EC2A7E068E001247F3 /* Route.swift in Sources */,
 				CA5597ED2A633BFB0046A63A /* Constants.swift in Sources */,
 				CADE13032A79E4FA005D4BC8 /* ChatViewModel.swift in Sources */,
 				CA55981E2A64F8E90046A63A /* ContentViewModel.swift in Sources */,
